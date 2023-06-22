@@ -1,0 +1,25 @@
+# ========================================
+# FileName: document_details.yaml
+# Date: 21 juin 2023 - 13:08
+# Author: Ammar Mian
+# Email: ammar.mian@univ-smb.fr
+# GitHub: https://github.com/ammarmian
+# Brief: Document details for a report
+#        on IRIS dataset analysis
+# =========================================
+
+name: analysis_report
+description: Analysis of the IRIS dataset as a Website with Hugo
+path: documents/hyde-hugo-starter/
+compile_script: compile.sh
+compile_script_command: bash
+view_script: view.sh
+view_script_command: bash
+experiment_dependencies:
+  - experiment_name: summary_statistics
+    action_name: export_plotly
+    files:
+      - histogram_sepal_length_(cm).html
+      - histogram_sepal_width_(cm).html
+      - histogram_petal_length_(cm).html
+      - histogram_petal_width_(cm).html

@@ -1,0 +1,27 @@
+# Experiment details for summary_statistics
+
+name: summary_statistics
+description: Compute some statistics of the variables in the IRIS dataset for visualisation.
+path: experiments/summary_statistics
+executable: experiments/summary_statistics/compute.py
+executable_command: python
+tags:
+  - histogram
+  - statistics
+  - visualisation
+actions:
+  - plot:
+      name: plot
+      executable: experiments/summary_statistics/plot.py
+      description: Plot the visualisations with matplotlib
+      executable_command: python
+  - export_latex:
+      name: export_latex
+      executable: experiments/summary_statistics/export_latex.py
+      description: Export the visualisations to LaTeX
+      executable_command: python
+  - export_plotly:
+      name: export_plotly
+      executable: experiments/summary_statistics/export_plotly.py
+      description: Export the visualisations to plotly
+      executable_command: python

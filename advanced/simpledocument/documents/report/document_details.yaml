@@ -1,0 +1,25 @@
+# ========================================
+# FileName: document_details.yaml
+# Date: 21 juin 2023 - 13:08
+# Author: Ammar Mian
+# Email: ammar.mian@univ-smb.fr
+# GitHub: https://github.com/ammarmian
+# Brief: Document details for a report
+#        on IRIS dataset analysis
+# =========================================
+
+name: report
+description: Report on an analysis of the IRIS dataset
+path: documents/report/
+compile_script: compile.sh
+compile_script_command: bash
+view_script: view.sh
+view_script_command: bash
+experiment_dependencies:
+  - experiment_name: summary_statistics
+    action_name: export_latex
+    files:
+      - histogram_sepal_length_(cm).tex
+      - histogram_sepal_width_(cm).tex
+      - histogram_petal_length_(cm).tex
+      - histogram_petal_width_(cm).tex

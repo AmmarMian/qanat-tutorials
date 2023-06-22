@@ -1,0 +1,67 @@
+% ========================================
+% FileName: main.tex
+% Date: 21 juin 2023 - 13:16
+% Author: Ammar Mian
+% Email: ammar.mian@univ-smb.fr
+% GitHub: https://github.com/ammarmian
+% Brief: Example document of a report
+%        on IRIS dataset using LaTeX
+% =========================================
+
+\documentclass[letterpaper]{ieeeconf}
+
+\usepackage[utf8]{inputenc}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage{amsmath}
+\usepackage{kantlipsum}
+
+\title{Example report on IRIS dataset}
+\author{Ammar Mian}
+
+
+\begin{document}
+
+\maketitle
+
+Some blabla about the example.
+
+\kant[1]
+
+\begin{figure}[h]
+    \centering
+    \input{exports/summary_statistics/histogram_petal_width_(cm).tex}
+    \caption{Histogram of petal width}
+    \label{fig:histogram_petal_width}
+\end{figure}
+
+\kant[2]
+
+\begin{figure}[h]
+    \centering
+    \input{exports/summary_statistics/histogram_petal_length_(cm).tex}
+    \caption{Histogram of petal length}
+    \label{fig:histogram_petal_length}
+\end{figure}
+
+\begin{figure}[h]
+    \centering
+    \input{exports/summary_statistics/histogram_sepal_width_(cm).tex}
+    \caption{Histogram of sepal width}
+    \label{fig:histogram_sepal_width}
+\end{figure}
+
+\kant[3]
+
+\begin{figure}[h]
+    \centering
+    \input{exports/summary_statistics/histogram_sepal_length_(cm).tex}
+    \caption{Histogram of sepal length}
+    \label{fig:histogram_sepal_length}
+\end{figure}
+
+\kant[4]
+
+\end{document}
+
+

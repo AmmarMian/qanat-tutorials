@@ -1,0 +1,21 @@
+baseURL = ""
+relativeURLs = true
+languageCode = "en-us"
+theme = "hyde"
+title = "Example report"
+
+[params]
+disqusShortname = ""
+googleAnalytics = ""
+layoutReverse = false
+theme = "hyde"
+themeColor = "theme-base-08"
+description = """
+Example of a report with Hugo and the Hyde theme.
+"""
+math = true
+
+
+[markup.goldmark.renderer]
+ unsafe = true
+
