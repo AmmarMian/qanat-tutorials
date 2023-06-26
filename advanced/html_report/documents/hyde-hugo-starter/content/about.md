@@ -8,7 +8,7 @@ menu:
 
 ---
 
-This is an example report to showcasez capabilities of [Qanat](http://ammarmian.github.io/qanat) for compiling html static documents depending on dynamic figures.
+This is an example report to showcase capabilities of [Qanat](http://ammarmian.github.io/qanat) for compiling html static documents depending on dynamic figures.
 
 ## Author
 
